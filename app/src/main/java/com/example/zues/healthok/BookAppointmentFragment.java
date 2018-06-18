@@ -35,6 +35,7 @@ public class BookAppointmentFragment extends Fragment {
     public static int pos;
     View view;
     ListView listView;
+    String jsonstr;
     ArrayList<Doctor> filterlist=new ArrayList<Doctor>();
     HomeActivity homeActivity;
 
@@ -144,11 +145,11 @@ public class BookAppointmentFragment extends Fragment {
 
             url= ServiceURL.Base+ServiceURL.SearchDoctor+strings[0];
             ServiceHandler servicehandler =new ServiceHandler();
-            String jsonStr = servicehandler.makeServiceCall(url);
-            if(jsonStr!=null)
+              jsonstr = servicehandler.makeServiceCall(url);
+            if(jsonstr!=null)
             {
                 try {
-                    JSONArray json=new JSONArray(jsonStr);
+                    JSONArray json=new JSONArray(jsonstr);
                     listresult.clear();
                     for(int i=0;i<json.length();i++) {
                         Doctor doctor = Doctor.fromJSON(json.getJSONObject(i).toString());
@@ -168,7 +169,7 @@ public class BookAppointmentFragment extends Fragment {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-            if(s.equalsIgnoreCase("Exception Caught"))
+            if(jsonstr==null)
             {
                 Toast.makeText(getActivity(), "Unable to connect to server,please try later", Toast.LENGTH_LONG).show();
 
@@ -197,10 +198,11 @@ public class BookAppointmentFragment extends Fragment {
 
         public SearchResultsAdapter(Context context, ArrayList<Doctor> doctors)
         {
-            layoutInflater = LayoutInflater.from(context);
-            this.doctors = doctors;
-            count = doctors.size();
-            this.context=context;
+                layoutInflater = LayoutInflater.from(context);
+                this.doctors = doctors;
+                count = doctors.size();
+                this.context = context;
+
         }
 
         @Override

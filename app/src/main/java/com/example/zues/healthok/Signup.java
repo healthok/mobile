@@ -125,6 +125,7 @@ public class Signup extends Activity {
                 try {
                     result = new JSONObject(jsonStr);
                     status = result.getString("status");
+                    Log.d("satval",status);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
