@@ -1,4 +1,4 @@
-#Mon Jun 18 10:26:24 IST 2018
-base.0=C\:\\Users\\AMIT TIWARI\\AndroidStudioProjects\\mobile-master_updated\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\6
+#Mon Jun 18 22:25:46 IST 2018
+base.0=C\:\\Users\\AMIT TIWARI\\AndroidStudioProjects\\mobile-master_updated\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\25
 path.0=classes.dex
 renamed.0=classes.dex

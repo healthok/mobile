@@ -170,37 +170,7 @@ public class UserHealthChart extends Fragment {
 
     public void setData(ArrayList<String> measureType, ArrayList<ArrayList<Integer>> values){
 
-        /**for test only started **/
-        /*
-        int count=10;
-        ArrayList<Entry> yVals1 = new ArrayList<Entry>();
-        for(int i=0;i<count;i++){
-            yVals1.add(new Entry(i,i*i));
-        }
-        ArrayList<Entry> yVals2 = new ArrayList<Entry>();
-        for(int i=0;i<count;i++){
-            yVals2.add(new Entry(i,i*i+50));
-        }
-        ArrayList<Entry> yVals3 = new ArrayList<Entry>();
-        for(int i=0;i<count;i++){
-            yVals3.add(new Entry(i,i*i+150));
-        }
 
-        LineDataSet set1,set2,set3;
-
-        set1 = new LineDataSet(yVals1,"Height");
-        set2 = new LineDataSet(yVals2,"Bp");
-        set3 = new LineDataSet(yVals3,"Weight");
-
-        set1.setColor(Color.RED);
-        set2.setColor(Color.GREEN);
-        set3.setColor(Color.BLUE);
-
-        set1.setLineWidth(2f);
-        set2.setLineWidth(2f);
-        set3.setLineWidth(2f);
-        */
-      /**for test only ended **/
 
         ArrayList<ArrayList<Entry>> val = new ArrayList<ArrayList<Entry>>();
         for(int i=0;i<12;i++){
