@@ -16,9 +16,11 @@
             android:id="@+id/textView55"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Profile"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:text="PROFILE"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#f90a0a"
+            android:fontFamily="monospace"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,9 +29,11 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="@dimen/activity_horizontal_margin"
-                android:text="&#8226; Name: " />
+                android:text="&#8226; Name: "
+                android:fontFamily="monospace"
+                android:textColor="#009e8e"/>
 
             <TextView
                 android:id="@+id/nameTextView"
@@ -50,7 +54,8 @@
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/activity_horizontal_margin"
                 android:text="&#8226; Registeration Number:"
-                />
+                android:fontFamily="monospace"
+                android:textColor="#009e8e"/>
 
             <TextView
                 android:id="@+id/regNoTextView"
@@ -73,7 +78,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/activity_horizontal_margin"
-                android:text="&#8226; Registeration Date:" />
+                android:text="&#8226; Registeration Date:"
+                android:fontFamily="monospace"
+                android:textColor="#009e8e"/>
 
             <TextView
                 android:id="@+id/regDateTextView"
@@ -81,7 +88,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/activity_horizontal_margin"
                 android:gravity="right"
-
                 />
 
 
@@ -96,7 +102,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/activity_horizontal_margin"
-                android:text="&#8226; Email:" />
+                android:text="&#8226; Email:"
+                android:fontFamily="monospace"
+                android:textColor="#009e8e"/>
 
             <TextView
                 android:id="@+id/emailTextView"
@@ -119,7 +127,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/activity_horizontal_margin"
-                android:text="&#8226; Mobile Number:" />
+                android:text="&#8226; Mobile Number:"
+                android:fontFamily="monospace"
+                android:textColor="#009e8e"/>
 
 
             <TextView
@@ -142,7 +152,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/activity_horizontal_margin"
-                android:text="&#8226; Additional Phone Number:" />
+                android:text="&#8226; Additional Phone Number:"
+                android:fontFamily="monospace"
+                android:textColor="#009e8e"/>
 
             <TextView
                 android:id="@+id/addPhoneTextView"
@@ -165,7 +177,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/activity_horizontal_margin"
-                android:text="&#8226; Address:" />
+                android:text="&#8226; Address:"
+                android:fontFamily="monospace"
+                android:textColor="#009e8e"/>
 
             <TextView
                 android:id="@+id/addressTextView"
@@ -188,7 +202,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/activity_horizontal_margin"
-                android:text="&#8226; Membership Type:" />
+                android:text="&#8226; Membership Type:"
+                android:fontFamily="monospace"
+                android:textColor="#009e8e"/>
 
             <TextView
                 android:id="@+id/membershipTypeTextView"
